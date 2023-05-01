@@ -1,6 +1,7 @@
 import 'dart:async';
 
-import 'package:bookly/features/home/Presentation/home_screen_view.dart';
+import 'package:bookly/features/home/Presentation/HomeViewBody.dart';
+import 'package:bookly/features/home/Presentation/homeView.dart';
 import 'package:flutter/material.dart';
 
 class SplashView extends StatefulWidget {
@@ -31,7 +32,7 @@ class _SplashViewState extends State<SplashView>
   @override
   Widget build(BuildContext context) {
     Timer(Duration(seconds: 5), () {
-      Navigator.pushReplacementNamed(context, HomeScreen.routeName);
+      Navigator.pushReplacementNamed(context, HomeView.routeName);
     });
     return Scaffold(
       body: Column(

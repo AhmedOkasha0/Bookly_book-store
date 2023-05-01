@@ -1,4 +1,6 @@
-import 'package:bookly/features/home/Presentation/home_screen_view.dart';
+import 'package:bookly/features/home/Presentation/HomeViewBody.dart';
+import 'package:bookly/features/home/Presentation/homeView.dart';
+import 'package:bookly/features/home/Presentation/views/books_detalis_body.dart';
 import 'package:bookly/features/splash/splash_view.dart';
 import 'package:bookly/features/theme/theme.dart';
 import 'package:flutter/material.dart';
@@ -14,7 +16,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: {
         SplashView.routeName: (context) => SplashView(),
-        HomeScreen.routeName: (context) => HomeScreen(),
+        HomeView.routeName: (context) => HomeView(),
+        BookDetalisBody.routeName:(context) => BookDetalisBody(),
       },
       initialRoute: SplashView.routeName,
       theme: ThemeScreen.darkMode,
