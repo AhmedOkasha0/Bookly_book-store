@@ -15,7 +15,7 @@ class BookDetalisBody extends StatelessWidget {
     var heightScreen = MediaQuery.of(context).size.height;
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 30),
+        padding: const EdgeInsets.symmetric(horizontal: 26),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [

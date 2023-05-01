@@ -16,7 +16,7 @@ class HomeViewBody extends StatelessWidget {
             children: [
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: CustomAppBar(),
+                child: SafeArea(child: CustomAppBar()),
               ),
               SizedBox(
                   height: MediaQuery.of(context).size.height * 0.25,

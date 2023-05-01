@@ -7,10 +7,20 @@ class CustomWidgetAppBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          IconButton(onPressed: () {}, icon: Icon(Icons.close,color: Colors.white,)),
+          IconButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              icon: const Icon(
+                Icons.close,
+                color: Colors.white,
+              )),
           IconButton(
               onPressed: () {},
-              icon: Icon(Icons.shopping_cart_outlined,color: Colors.white,)),
+              icon: const Icon(
+                Icons.shopping_cart_outlined,
+                color: Colors.white,
+              )),
         ],
       ),
     );
