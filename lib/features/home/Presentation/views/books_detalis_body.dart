@@ -3,6 +3,7 @@ import 'package:bookly/features/home/Presentation/views/Widgets/Box_Action.dart'
 import 'package:bookly/features/home/Presentation/views/Widgets/custom_widget_appBar.dart';
 import 'package:bookly/features/home/Presentation/views/Widgets/styles.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class BookDetalisBody extends StatelessWidget {
   static const String routeName = 'BooksBody';
@@ -15,6 +16,7 @@ class BookDetalisBody extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 30),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             CustomWidgetAppBar(),
             Padding(
@@ -45,7 +47,16 @@ class BookDetalisBody extends StatelessWidget {
               height: heightScreen * 0.05,
             ),
             BoxAction(),
-
+            SizedBox(
+              height: context.height * 0.02,
+            ),
+            Align(
+              alignment: Alignment.centerLeft,
+              child: Text(
+                'You can also like',
+                style: Styles.textStyle14.copyWith(fontWeight: FontWeight.w800),
+              ),
+            )
           ],
         ),
       ),
