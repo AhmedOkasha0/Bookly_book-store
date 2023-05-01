@@ -1,3 +1,4 @@
+import 'package:bookly/features/home/Presentation/views/Widgets/FeatureBooksListView.dart';
 import 'package:bookly/features/home/Presentation/views/Widgets/custom_ListViewItem.dart';
 import 'package:bookly/features/home/Presentation/views/Widgets/Box_Action.dart';
 import 'package:bookly/features/home/Presentation/views/Widgets/custom_widget_appBar.dart';
@@ -24,7 +25,7 @@ class BookDetalisBody extends StatelessWidget {
               child: CustomListViewItems(),
             ),
             SizedBox(
-              height: heightScreen * 0.07,
+              height: heightScreen * 0.04,
             ),
             Text(
               'The Jungle Book',
@@ -44,7 +45,7 @@ class BookDetalisBody extends StatelessWidget {
             ),
             Text('data'),
             SizedBox(
-              height: heightScreen * 0.05,
+              height: heightScreen * 0.03,
             ),
             BoxAction(),
             SizedBox(
@@ -56,7 +57,14 @@ class BookDetalisBody extends StatelessWidget {
                 'You can also like',
                 style: Styles.textStyle14.copyWith(fontWeight: FontWeight.w800),
               ),
-            )
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: SizedBox(
+                height: context.height * 0.15,
+                child: FeaturedBooksListView(),
+              ),
+            ),
           ],
         ),
       ),
