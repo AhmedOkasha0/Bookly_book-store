@@ -1,4 +1,3 @@
-import 'package:bookly/features/home/Presentation/homeView.dart';
 import 'package:bookly/features/home/Presentation/views/Widgets/styles.dart';
 import 'package:bookly/features/home/Presentation/views/books_detalis_body.dart';
 import 'package:flutter/material.dart';
