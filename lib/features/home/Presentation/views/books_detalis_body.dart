@@ -22,7 +22,9 @@ class BookDetalisBody extends StatelessWidget {
             CustomWidgetAppBar(),
             Padding(
               padding: EdgeInsets.symmetric(horizontal: widthScreen * .17),
-              child: CustomListViewItems(),
+              child: CustomListViewItems(
+                  imageUrl:
+                      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FImage&psig=AOvVaw0xkK9-ebDu5eu6bKlay982&ust=1683719844343000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCNiNi6uX6P4CFQAAAAAdAAAAABAE"),
             ),
             SizedBox(
               height: heightScreen * 0.04,
