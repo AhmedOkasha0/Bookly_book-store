@@ -14,7 +14,7 @@ class FeaturedBooksListView extends StatelessWidget {
         child: CustomListViewItems(
             imageUrl: items.volumeInfo!.imageLinks!.thumbnail ?? '' ),
       ),
-      itemCount: 5,
+      itemCount: 8,
     );
   }
 }
